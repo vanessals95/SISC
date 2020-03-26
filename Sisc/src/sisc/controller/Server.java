@@ -15,10 +15,10 @@ public class Server extends Thread{
         try{
             String [] IP;
             IP = ob.ips;
-            ServerSocket serverSock = new ServerSocket(6001);
-            Socket Sock = serverSock .accept();
+            ServerSocket serverSock = new ServerSocket(6001); //iniciando servidor
+            Socket Sock = serverSock .accept(); //estabelecendo conexão
             DataOutputStream out =new DataOutputStream(Sock.getOutputStream());
-            out.writeUTF("i am fine, thank you");
+            out.writeUTF("Conectado!");
             DataInputStream in= new DataInputStream(Sock.getInputStream());
             System.out.println(in.readUTF());
             Sock.close();   

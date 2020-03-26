@@ -34,7 +34,7 @@ public class Arquivo {
         System.out.println("Arquivo não encontrado");
         } else {
  
-        File diretorioDestino = new File("C:\\Users\\joaoa\\Desktop\\SISC");
+        File diretorioDestino = new File("C:\\Users\\Vanessa\\Desktop\\SISC");
         boolean sucesso = file.renameTo(new File(diretorioDestino, file.getName()));
             if (sucesso) {
                 System.out.println("Arquivo movido para '" + diretorioDestino.getAbsolutePath() + "'");
@@ -47,7 +47,7 @@ public class Arquivo {
          
     public static void criarDiretorio() {
         try {
-            File diretorio = new File("C:\\Users\\joaoa\\Desktop\\SISC");
+            File diretorio = new File("C:\\Users\\Vanessa\\Desktop\\SISC");
             diretorio.mkdir();
         } catch (Exception ex) {
             
